@@ -1,0 +1,107 @@
+#hamnav {
+	width: 100%;
+	background: #578;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+	display: flex;
+}
+
+#hamitems a {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+#hamitems a:hover {
+	background: #af0d0d;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+	display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+
+	/* (A) BREAK INTO VERTICAL MENU */
+	#hamitems a {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		border-top: 1px solid #333;
+	}
+
+	/* (B) SHOW HAMBURGER ICON */
+	#hamnav label {
+		display: inline-block;
+		color: white;
+		background: #a02620;
+		font-style: normal;
+		font-size: 1.2em;
+		padding: 10px;
+	}
+
+	/* (C) TOGGLE SHOW/HIDE MENU */
+	#hamitems {
+		display: none;
+	}
+
+	#hamnav input:checked~#hamitems {
+		display: block;
+	}
+}
+
+		header{
+			height: 50px;background-color: #5F9EA0;
+		}
+		footer{
+			height: 30px;background-color: #5F9EA0;
+		}
+		
+			.imgBox {
+				border-top: 2px solid cadetblue;
+				width: 100%;
+				height: 300px;
+				margin: 0 auto;
+			}
+
+			.imgBox img {
+				width: 100%;
+				height: 300px;
+				margin: 0 auto;
+				padding-top: 30px;
+			}
+
+			.img1 {
+				display: block;
+			}
+
+			.img2 {
+				display: none;
+			}
+
+			.img3 {
+				display: none;
+			}
+			.img4 {
+				display: none;
+			}
+			.img5 {
+				display: none;
+			}
+			.kong{
+				height: 20px;
+			}
+			.yuanyin {
+				background-color: #F5F5F5;
+				}
+			.yuanyin td{
+				line-height:30px;
+				}

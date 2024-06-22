@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>自我介绍</title>
+		<link rel="stylesheet" type="text/css" href="./ham-menu.css">
+		<link rel="stylesheet" href="./bootstrap.min.css" />
+		<link rel="stylesheet" href="./bootstrap-theme.min.css" />
+	</head>
+	<body>
+		<header> </header>
+		<nav id="hamnav">
+			<label for="hamburger">&#9776;</label>
+			<input type="checkbox" id="hamburger" />
+			<div id="hamitems">
+				<a href="index.html">首页</a>
+				<a href="zwjs.html">自我介绍</a>
+				<a href="xqah.html">兴趣爱好</a>
+				<a href="rsjl.html">人生经历</a>
+				<a href="ly.html">留言</a>
+			</div>
+		</nav>
+		
+		<div class="imgBox">
+			<img class="img-slide img1" src="1.jpg" alt="1">
+		</div>
+		<script type="text/javascript">
+			var index = 0;
+
+			function ChangeImg() {
+				index++;
+				var a = document.getElementsByClassName("img-slide");
+				if (index >= a.length) index = 0;
+				for (var i = 0; i < a.length; i++) {
+					a[i].style.display = 'none';
+				}
+				a[index].style.display = 'block';
+			}
+			setInterval(ChangeImg, 3000);
+		</script>
+		<div class="kong"></div>
+		<div class="yuanyin">
+		<table width="791" border="0" cellspacing="0" cellpadding="0" align="center">
+				<tr>
+					<td width="451" valign="top">
+						<p>
+                           你好，欢迎来到我的网站！
+						   我叫马志忠，是中南财经政法大学信息管理与信息系统专业的一个学生，很荣幸能与你一起参观我的网站。
+						   首先，我想谈谈我的家乡。我出生在宁夏固原市，那里有蔚蓝的天空、清新的空气，还有很多好吃的， 我从小在乡村
+						   长大，我对大自然有着深厚的感情，这也培养了我乐观开朗的性格和对生活的热爱。
+                           在学术方面，我对我的专业——信息管理与信息系统充满热情。自从接触了编程和算法，我就深深地被它们吸引。我相
+						   信，科技的力量能够改变世界，而我也渴望成为这个变革中的一员。在过去的学习中，我不仅注重理论知识的
+						   学习，还积极参与各种实践项目，让自己的学习生涯更加精彩。						   。
+                           除了学业，我还热衷于参与各种社团活动。我是学校篮球队的一员，篮球教会了我团队合作的重要性，也锻炼了我的
+						   意志力和身体素质，此外，我还是学校志愿者协会的成员，参与过多次社区服务和公益活动，我认为帮助他人是一件
+						   非常有意义的事情。
+                           在未来的大学生活中，我希望能够结识更多的朋友，拓宽我的视野，我计划利用课余时间参加更多的学术讲座和研讨
+						   会，不断提升自己的专业水平，同时，我也希望能够加入学校的科研项目，通过实际操作来加深对专业知识的理解。
+                           最后，我想说的是，大学不仅是学习知识的地方，更是塑造个性的舞台，我期待在这里遇到挑战，收获成长，也希望
+						   能够和你一起创造属于我们的精彩故事。
+                           谢谢你读完我的自我介绍，再见！
+                        </p>
+					</td>
+					<td width="23" valign="top">&nbsp;</td>
+					<td width="317" valign="top"><img src="16.jpg" width="300"
+							height="450" /></td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			<p align="center">
+				如果你想要拥有从未拥有过的东西，就得去做从未做过的事
+			</p>
+		</footer>
+	</body>
+</html>

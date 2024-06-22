@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+		<meta charset="utf-8">
+		<title>兴趣爱好</title>
+		<link rel="stylesheet" type="text/css" href="./ham-menu.css">
+		<link rel="stylesheet" href="./bootstrap.min.css" />
+		<link rel="stylesheet" href="./bootstrap-theme.min.css" />
+		<style type="text/css">
+		#case{
+			padding: 40px 0;
+			background-color: #EEEEEE;
+			text-align: center;
+		}
+		#case h4{
+			color: #666;
+		}
+		#case p{
+			color: #666;
+			line-height: 1.6;
+		}
+		@media (min-width: 768px){
+			.jumbotron h1{
+				font-size: 30px;
+			}
+			.jumbotron h4{
+				font-size: 16px;
+			}
+		}
+		@media (min-width: 992px){
+			.jumbotron h1{
+				font-size: 33px;
+			}
+			.jumbotron h4{
+				padding-top: 2px;
+				font-size: 17px;
+			}
+		}
+		@media (min-width: 1200px){
+			.jumbotron h1{
+				font-size: 36px;
+			}
+			.jumbotron h4{
+				font-size: 18px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<header> </header>
+			<nav id="hamnav">
+				<label for="hamburger">&#9776;</label>
+				<input type="checkbox" id="hamburger" />
+				<div id="hamitems">
+					<a href="index.html">首页</a>
+				    <a href="zwjs.html">自我介绍</a>
+				    <a href="xqah.html">兴趣爱好</a>
+				    <a href="rsjl.html">人生经历</a>
+				    <a href="ly.html">留言</a>
+				</div>
+			</nav>
+			
+			<div class="imgBox">
+				<img class="img-slide img1" src="1.jpg" alt="1">
+			</div>
+		<script type="text/javascript">
+			var index = 0;
+			function ChangeImg() {
+				index++;
+				var a = document.getElementsByClassName("img-slide");
+				if (index >= a.length) index = 0;
+				for (var i = 0; i < a.length; i++) {
+					a[i].style.display = 'none';
+				}
+				a[index].style.display = 'block';
+			}
+			setInterval(ChangeImg, 3000);
+		</script>
+	<div id="case">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>篮球</h4>
+						<img src="8.png" width="300px">
+						<p>篮球，是我最喜欢的一项运动，在我眼里，它不仅是一项运动，
+							更是一种激情的释放和团队精神的体现，篮球教会了我坚持
+							与拼搏，无论胜败，它都是我青春记忆中最宝贵的篇章。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>斯蒂芬库里</h4>
+						<img src="9.png" width="300px">
+						<p>我的偶像是斯蒂芬·库里，他是一位美国职业篮球运动员，以卓
+							越的三分球投射能力和创新的比赛风格而闻名，他已经多次带
+							领球队赢得NBA总冠军，还两次获得常规赛MVP称号。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>《百年孤独》</h4>
+						<img src="10.png" width="300px">
+						<p>《百年孤独》是我很喜欢的一本书，它通过布恩迪亚家族七代人的
+							传奇故事，展现了拉丁美洲的社会变迁，书中独特的想象力和深刻
+							的人性探讨让人深思，也能感受到时间的无情和生命的孤独。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>《活着》</h4>
+						<img src="11.png" width="300px">
+						<p>《活着》是一部揭示人生苦难与坚韧精神的作品，通过主人公福贵的
+							一生，展现了生命的脆弱与珍贵，以及在逆境中坚韧不拔的生命力。
+							这部小说让我反思生活的意义，懂得珍惜当下，勇敢面对困难。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>《云边有个小卖部》</h4>
+						<img src="12.png" width="300px">
+						<p>《云边有个小卖部》是一部关于生活、爱情和成长的小说，它讲述了
+							主人公刘十三在云边小镇的生活经历,通过对人物性格的深入刻画和
+							对生活细节的生动描绘，引发了读者对生活意义的思考。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>《大话西游》</h4>
+						<img src="13.png" width="300px">
+						<p>《大话西游》是一部充满哲理的电影，它讲述了孙悟空在经历一系列冒险
+							和挑战后，逐渐认识到真爱和责任的故事。它教会了我珍惜当下，勇敢追
+							求真爱，同时让我明白了每个人都有自己的责任。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>《你的婚礼》</h4>
+						<img src="14.png" width="300px">
+						<p>《你的婚礼》是一部触动人心的爱情电影，通过主人公的故事展现了爱情的
+							复杂性和不确定性，成长和选择的重要性。影片让人深刻反思爱情的
+							真谛，提醒我们珍惜眼前人，勇敢面对生活的挑战。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<h4>《千与千寻》</h4>
+						<img src="15.png" width="300px">
+						<p>《千与千寻》是一部富有深意的动画电影，通过千寻的冒险旅程，展现了勇气、
+							成长和爱的力量。电影激励我们面对困难时保持坚韧不拔，追求自我成
+							长，同时也提醒我们珍惜身边的亲情和友情。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<footer>
+			<p align="center">
+				如果你想要拥有从未拥有过的东西，就得去做从未做过的事
+			</p>
+		</footer>
+	</body>
+	
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>留言</title>
+		<link rel="stylesheet" type="text/css" href="./ham-menu.css">
+		<link rel="stylesheet" href="./bootstrap.min.css" />
+		<link rel="stylesheet" href="./bootstrap-theme.min.css" />
+		<style type="text/css">
+		.bg {
+			background-color:#cad7c5;
+		}
+		.conect h3{
+			font-size:16px; 
+			font-weight:bold; 
+			width:543px; 
+			height:28px; 
+			line-height:28px; 
+			text-align:left; 
+			text-indent:26px; 
+			background:url(../images/h3.jpg) no-repeat; 
+			color:#ffffff;}
+		.conect table tr td{
+			line-height:24px; 
+			padding:5px 0;
+			}
+			.conect table{
+				margin:20px 0;
+				}
+		</style>
+	</head>
+	<body>
+		
+		<header> </header>
+			<nav id="hamnav">
+				<label for="hamburger">&#9776;</label>
+				<input type="checkbox" id="hamburger" />
+				<div id="hamitems">
+					<a href="index.html">首页</a>
+				    <a href="zwjs.html">自我介绍</a>
+				    <a href="xqah.html">兴趣爱好</a>
+				    <a href="rsjl.html">人生经历</a>
+				    <a href="ly.html">留言</a>
+				</div>
+			</nav>
+			
+			<div class="imgBox">
+				<img class="img-slide img1" src="1.jpg" alt="1">
+			</div>
+		<script type="text/javascript">
+			var index = 0;
+			function ChangeImg() {
+				index++;
+				var a = document.getElementsByClassName("img-slide");
+				if (index >= a.length) index = 0;
+				for (var i = 0; i < a.length; i++) {
+					a[i].style.display = 'none';
+				}
+				a[index].style.display = 'block';
+			}
+			setInterval(ChangeImg, 3000);
+		</script>
+		<div class="bg">
+		<div class="conect" align="center">
+						<h3>发表内容</h3>
+						<table width="460" border="0" cellspacing="0" cellpadding="0">
+							 <tr>
+								<td width="168">
+									<div align="right">昵称:</div>
+								</td>
+								<td width="292">
+									<label>
+		  								<input type="text" name="textfield" id="textfield" class="zhi_in"/>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td><div align="right">性别：</div></td>
+								<td><input type="radio" name="radio" id="radio" value="radio" /> 男 <input type="radio" name="radio" id="radio" value="radio1" /> 女</td>
+							</tr>
+							
+							<tr>
+								<td><div align="right">电话：</div></td>
+								<td>
+									<label>
+		  								<input type="text" name="textfield" id="textfield" class="zhi_inA"/>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td><div align="right">E-mail：</div></td>
+								<td>
+									<label>
+		  								<input type="text" name="textfield" id="textfield" class="zhi_inA"/>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td><div align="right">QQ：</div></td>
+								<td>
+									<label>
+		  								<input type="text" name="textfield" id="textfield" class="zhi_inA"/>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td><div align="right">留言：</div></td>
+								<td>
+									<label>
+		  								<textarea name="textarea" id="textarea" cols="45" rows="5" class="zhi_inB"></textarea>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td><div align="right">评价：</div></td>
+								<td>
+									<label>
+		  								<textarea name="textarea" id="textarea" cols="45" rows="5" class="zhi_inB"></textarea>
+									</label></td>
+							</tr>
+						</table>
+							<p>&nbsp;</p>
+					</div>
+				</div>
+				<div class="clearit"></div>
+		</div>
+		</div>
+		<footer>
+			<p align="center">
+				如果你想要拥有从未拥有过的东西，就得去做从未做过的事
+			</p>
+		</footer>
+	</body>
+</html>

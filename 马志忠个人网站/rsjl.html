@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>人生经历</title>
+		<link rel="stylesheet" type="text/css" href="./ham-menu.css">
+		<link rel="stylesheet" href="./bootstrap.min.css" />
+		<link rel="stylesheet" href="./bootstrap-theme.min.css" />
+		<style type="text/css">
+		
+		.jumbotron{
+			background: url(img/banner1.jpg) no-repeat left top;
+			margin: 50px 0 0 0;
+			color: #eee;
+		}
+		.jumbotron h1{
+			font-size: 26px;
+			padding-left: 20px;
+		}
+		.jumbotron h4{
+			font-size: 15px;
+			padding-left: 20px;
+		}
+		.jumbotron p{
+			margin-top: -10px;
+			padding-left: 20px;
+		}
+		#information{
+			background-color: #F5F5F5;
+			padding: 50px 0;
+		}
+		.info-content{
+			background-color: #FFFFFF;
+			margin-bottom: 16px;
+			margin-right: 5px;
+			box-shadow: 2px 2px 3px #ccc;
+		}
+		.info-content img{
+			margin: 12px 0;
+		}
+		.info-content h4{
+			color: #333;
+			padding: 2px 0 0 0;
+			font-size: 14px;
+		}
+		.info-content p{
+			line-height: 1.6;
+			font-size: 13px;
+		}
+		.container-fluid{
+			padding: 0;
+		}
+		.info-right{
+			background: #FFFFFF;
+			box-shadow: 2px 2px 3px #CCCCCC;
+		}
+		.info-right blockquote{
+			padding: 0;
+		}
+		.info-right h2{
+			font-size: 20px;
+			color: #333;
+			padding: 5px;
+		}
+		.info-right h4{
+			padding-top: 3px;
+			font-size: 16px;
+			color: #333;
+			line-height: 1.6;
+		}
+		.info-right .info-right-img{
+			margin: 12px 0px;
+			padding: 0;
+		}
+		.info-right .info-right-text{
+			padding-right: 0;
+		}
+		.padding-left{
+			padding-left: 12px;
+		}
+		.eatdesc{
+			text-indent: 30px;
+		}
+		.show-3{
+			display: -webkit-box;
+		    display: -moz-box;
+		    -webkit-line-clamp: 3;
+		    -moz-line-clamp: 3;
+		    -ms-line-clamp: 3;
+		    -webkit-box-orient: vertical;
+		    white-space: normal;
+		    overflow: hidden;
+		    font-size: 14px;
+		    line-height: 1.6;
+		}
+		@media (max-width: 650px){
+			.xs-hidden{
+			    display: -webkit-box;
+			    display: -moz-box;
+			    -webkit-line-clamp: 2;
+			    -moz-line-clamp: 2;
+			    -ms-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			    white-space: normal;
+			    overflow: hidden;
+			    font-size: 14px;
+			    line-height: 1.6;
+			}
+		}
+		@media (min-width: 768px){
+			.jumbotron h1{
+				font-size: 30px;
+			}
+			.jumbotron h4{
+				font-size: 16px;
+			}
+			.info-content{
+				margin-bottom: 8px;
+			}
+			.info-content h4{
+				font-size: 16px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.info-content p{
+				font-size: 14px;
+			}
+		}
+		@media (min-width: 992px){
+			.jumbotron h1{
+				font-size: 33px;
+			}
+			.jumbotron h4{
+				padding-top: 2px;
+				font-size: 17px;
+			}
+			.info-content{
+				margin-bottom: 16px;
+			}
+			.info-content h4{
+				font-size: 18px;
+			}
+			.info-content p{
+				font-size: 12px;
+			}
+		}
+		@media (min-width: 1200px){
+			.jumbotron h1{
+				font-size: 36px;
+			}
+			.jumbotron h4{
+				font-size: 18px;
+			}
+			.info-content{
+				margin-bottom: 19px;
+			}
+			.info-content h4{
+				font-size: 19px;
+			}
+			.info-content p{
+				font-size: 15px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<header> </header>
+			<nav id="hamnav">
+				<label for="hamburger">&#9776;</label>
+				<input type="checkbox" id="hamburger" />
+				<div id="hamitems">
+					<a href="index.html">首页</a>
+				    <a href="zwjs.html">自我介绍</a>
+				    <a href="xqah.html">兴趣爱好</a>
+				    <a href="rsjl.html">人生经历</a>
+				    <a href="ly.html">留言</a>
+				</div>
+			</nav>
+			
+			<div class="imgBox">
+				<img class="img-slide img1" src="1.jpg" alt="1">
+			</div>
+		<script type="text/javascript">
+			var index = 0;
+			function ChangeImg() {
+				index++;
+				var a = document.getElementsByClassName("img-slide");
+				if (index >= a.length) index = 0;
+				for (var i = 0; i < a.length; i++) {
+					a[i].style.display = 'none';
+				}
+				a[index].style.display = 'block';
+			}
+			setInterval(ChangeImg, 3000);
+		</script>
+		<div id="information">
+			<div class="container">
+				<strong>
+					<p align="center" >人生经历</p>
+				</strong>
+				<div class="row">
+					<div class="col-md-8">
+						<div class="container-fluid">
+							<div class="row info-content">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="17.jpg"  class="img-responsive" />
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<br />
+									<h4>求学之路第一站：西吉县回民小学</h4>
+									
+									<p class="xs-hidden"> 
+										西吉县回民小学是我求学之路的第一站，我在那里度过了我的童年，在我的印象中
+										，我的小学岁月是纯真与探索的时光，那时的我，怀揣着对知识的渴望和对未来的
+										憧憬，一步步踏实地走在成长的路上，为我日后的学习生涯奠定了坚实的基础。
+									</p>
+								</div>
+							</div>
+							<div class="row info-content">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="18.jpg"  class="img-responsive" />
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<br />
+									<h4>求学之路第二站：西吉县第二中学</h4>
+									<p class="xs-hidden">
+										在西吉县第二中学我度过了我的初中生涯，在那里我结识了一群志同道合的朋友，我们
+										一起探讨难题，一起参加篮球赛，共同编织着青春的梦想，老师的教诲如春风化雨，不仅
+										传授了我学科知识，更教会了我做人的道理。这段时光，虽然偶尔伴随着考试的压力，但
+										更多的是成长的喜悦和对未来的无限憧憬。
+									</p>
+								</div>
+							</div>
+							<div class="row info-content">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="19.jpg" class="img-responsive" />
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<br />
+									<h4>求学之路第三站：宁夏西吉中学</h4>
+									<p class="xs-hidden">
+										宁夏西吉中学那段高中时光是我印象中最深刻的一段时光，在那里我交到了很多朋友，也遇
+										到了人生中最好的老师，他们和我一起跨过了高考，让我实现了人生的褪变，为我未来的道
+										路奠定了基础。
+									</p>
+									
+								</div>
+							</div>
+							<div class="row info-content">
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									<img src="20.jpg" class="img-responsive" />
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7">
+									<br />
+									<h4>求学之路第四站：中南财经政法大学</h4>
+									<p class="xs-hidden">
+										中南财经政法大学是我的大学在这里，我不仅深入学习了专业知识，还积极参与社团活动，培
+										养了团队合作精神和领导能力，课堂上的激烈讨论与实验室里的实践操作相得益彰，让我学会
+										了批判性思考和解决问题的方法，与来自五湖四海的同学交流，拓宽了我的视野，也让我更加
+										自信地面对未来的挑战，这段经历，无疑是我人生中宝贵的财富。
+									</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 info-right hidden-xs">
+						<blockquote>
+							<h2>获奖经历</h2>
+						</blockquote>
+						<div class="container-fluid padding-left">
+							<div class="row">
+								<div class="col-md-5 col-sm-5 col-xs-5 info-right-img">
+									<img src="21.jpg" alt="龙猫" class="img-responsive" />
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7 info-right-text">
+									<h4 class="show-3">三好学生</h4>
+									<p>三好学生是我高中时期获得的奖项，这份荣誉是我高中时期努力的证明，它记录着我高中时期挥洒过的汗水</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 col-sm-5 col-xs-5 info-right-img">
+									<img src="22.jpg" alt="哈尔的移动城堡" class="img-responsive" />
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7 info-right-text">
+									<h4 class="show-3">荣誉证书 </h4>
+									<p>荣誉证书是我这一路走来获得最多的奖项，它不仅是对我的认可，也是激励我前进的力量。</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 col-sm-5 col-xs-5 info-right-img">
+									<img src="23.jpg" alt="魔女宅急便" class="img-responsive" />
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7 info-right-text">
+									<h4 class="show-3">篮球奖杯 </h4>
+									<p>篮球奖杯是我唯一获得过的篮球奖项，它代表着我和兄弟们的努力，让我更加热爱篮球。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p></p>
+		<footer>
+			<p align="center">
+				如果你想要拥有从未拥有过的东西，就得去做从未做过的事
+			</p>
+		</footer>
+	</body>
+</html>
